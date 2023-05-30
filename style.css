@@ -16,7 +16,7 @@ html{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-template-rows: 1fr;
-    margin: 10% 5%;
+    margin: 0 5%;
     gap: .5rem;
     background-color: rgba(0, 0, 0, 0.318);
     border-radius: 20px;
