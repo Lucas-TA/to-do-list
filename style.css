@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    height: 100%;
+}
+html{
+    background: url(../images/background.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-rows: 1fr;
+    margin: 10% 5%;
+    gap: .5rem;
+    background-color: rgba(0, 0, 0, 0.318);
+    border-radius: 20px;
+}
+header{
+    text-align: center;
+    grid-column: 1 / -1;
+    padding: 3em;
+}
+h1{
+    font-family: 'Bruno Ace', cursive;
+    text-transform: uppercase;
+}
+.first{
+    font-size: 1.5rem;
+}
+h1, .first{
+    color: white;
+}
+.done{
+    text-decoration: line-through;
+}
+.user-input{
+    height: 2rem;
+    width: 20rem;
+    text-align: center;
+    border: 4px solid #000000;
+    border-radius: 20px;
+    font-size: 1.4rem;
+}
+.btn-add-items {
+    width: 8rem;
+    height: 2rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.btn-add-items:hover{
+    background-image: linear-gradient(#ccc, white);
+}
+.box{
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.listBox {
+    grid-column: 1 / -1;
+}
+.list-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    justify-items: center; 
+    gap: 1rem;
+    margin: 2%;
+}
+.list-container li{
+    font-size: 1.8rem;
+    color: white;
+    list-style: none;
+    cursor: pointer;
+    padding: .3rem;
+}
+.list-container > div{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.935);
+    border-radius: 10px;
+    width: 100%;
+}
+.delete{
+    background-color:rgba(0, 0, 0, 0.935);
+    color: rgb(134, 134, 134);
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding-bottom: .4rem;
+}
